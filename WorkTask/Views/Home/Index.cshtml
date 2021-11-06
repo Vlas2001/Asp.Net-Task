@@ -1,0 +1,47 @@
+﻿@model List<Models.Models.Person>
+
+<form asp-controller="Home" asp-action="Index" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <button type="submit">Submit</button>
+</form>
+
+<br/><br/>
+
+
+<form asp-controller="Home" asp-action="Update" method="post" asp-antiforgery="true">
+    <table class="table">  
+        <tr>  
+            <th>Name</th> 
+            <th>DateOfBirth</th> 
+            <th>Married</th>  
+            <th>Phone</th>
+            <th>Salary</th>
+        </tr>
+    
+        @for (var i = 0; i < Model.Count; i++)
+        {
+            <input asp-for="@Model[i].Id" class="form-control" hidden/>
+            <tr>
+                <td>
+                    <input asp-for="@Model[i].Name" class="form-control"/>
+                </td>  
+                <td>
+                    <input asp-for="@Model[i].DateOfBirth" class="form-control"/>
+                </td>  
+                <td>
+                    <input asp-for="@Model[i].Married" class="form-control"/>
+                </td>
+                <td>
+                    <input asp-for="@Model[i].Phone" class="form-control"/>
+                </td>  
+                <td>
+                    <input asp-for="@Model[i].Salary" class="form-control"/>
+                </td>
+                <td>
+                    @Html.ActionLink("Delete", "Delete", "Home", new{id = 29})
+                </td>
+            </tr>
+        }
+        <input type="submit" value="Save" class="btn btn-primary"/>
+    </table>
+</form>

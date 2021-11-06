@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HR46UqR7Ghk4EsiZ1kPnoSut2r9y35UIcCUGfZsg4ScEyoKNi7jNDcFkrgL9ByFJxbqawoYtqZDonTHZMIB2Fw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vlask\\RiderProjects\\WorkTask\\Services\\Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vlask\\.nuget\\packages\\csvhelper\\27.1.1\\csvhelper.27.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
